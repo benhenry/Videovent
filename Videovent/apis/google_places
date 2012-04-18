@@ -1,0 +1,16 @@
+# See reference at https://developers.google.com/maps/documentation/places/
+
+app_key = "AIzaSyA8FbgxDMw9xTPUBq1s2Afj_x_XzyqWLrU"
+
+uri = "https://maps.googleapis.com/maps/api/place"
+place_search = "/search"
+place_details = "/details"
+place_checkin = "/check-in"
+output = "/json" # could also be /xml if we want XML formatted output
+sensor = "sensor=false" # Set to true in production, or once we get sensors up.
+key = "key=%s" % (app_key)
+
+# need to choose between finding a location to record at and
+# uri += "rankby=distance"
+# finding nearby locations
+# uri += "radius=%d" % (2000) # which is to say 2000m radius
